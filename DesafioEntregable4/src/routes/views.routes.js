@@ -16,6 +16,8 @@ router.get('/', async (req, res) => {
 
 router.get(`/${path}`, async (req, res) => {
     try {
+        const resProducts = await products.getAllProducts()
+        res.render(`${path}`, {resProducts})
     } catch (error){
         console.log(error)
     }
