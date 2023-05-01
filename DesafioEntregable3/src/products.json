@@ -1,0 +1,12 @@
+[
+    {"title":"manzana","description":"este es un producto de prueba","price":200,"thumbnail":"sin imagen","code":"fruta1","stock":25,"id":1},
+    {"title":"banana","description":"este es un segundo producto de prueba","price":300,"thumbnail":"sin imagen","code":"fruta2","stock":30,"id":2},
+    {"title":"pera","description":"este es un tercer producto de prueba","price":300,"thumbnail":"sin imagen","code":"fruta3","stock":30,"id":3},
+    {"title":"naranja","description":"este es un cuarto producto de prueba","price":300,"thumbnail":"sin imagen","code":"fruta4","stock":30,"id":4},
+    {"title":"sandia","description":"este es un quinto producto de prueba","price":300,"thumbnail":"sin imagen","code":"fruta5","stock":30,"id":5},
+    {"title":"melon","description":"este es un sexto producto de prueba","price":256,"thumbnail":"sin imagen","code":"fruta6","stock":35,"id":6},
+    {"title":"uva","description":"este es un septimo producto de prueba","price":256,"thumbnail":"sin imagen","code":"fruta7","stock":35,"id":7},
+    {"title":"pomelo","description":"este es un octavo producto de prueba","price":256,"thumbnail":"sin imagen","code":"fruta8","stock":35,"id":8},
+    {"title":"limon","description":"este es un noveno producto de prueba","price":256,"thumbnail":"sin imagen","code":"fruta9","stock":35,"id":9},
+    {"title":"cereza","description":"este es un decimo producto de prueba","price":256,"thumbnail":"sin imagen","code":"fruta10","stock":35,"id":10}
+]

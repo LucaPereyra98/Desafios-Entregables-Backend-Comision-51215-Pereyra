@@ -1,0 +1,21 @@
+{
+  "name": "desafios-entregables-programacion-backend",
+  "description": "Buenos dias/tardes/noches.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node DesafioEntregable4/src/app.js",
+    "dev": "nodemon DesafioEntregable4/src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22",
+    "open": "^7.0.3"
+  }
+}
