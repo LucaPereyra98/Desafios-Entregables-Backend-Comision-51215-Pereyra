@@ -1,9 +1,24 @@
 const { Router } = require('express')
-
+const ProductsManager = require('../managers/productsManager')
+const products = new ProductsManager()
+const path = 'realtimeproducts'
 const router = Router()
 
-router.get('/', (req, res) => {
-    res.render('index', {})
+
+router.get('/', async (req, res) => {
+    try {
+        const resProducts = await products.getAllProducts()
+        res.render('index', {resProducts})
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+router.get(`/${path}`, async (req, res) => {
+    try {
+    } catch (error){
+        console.log(error)
+    }
 })
 
 module.exports = router

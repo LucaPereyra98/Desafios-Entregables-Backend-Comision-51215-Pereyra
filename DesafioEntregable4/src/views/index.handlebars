@@ -1,5 +1,20 @@
 <div>
     <h1>Hola Tutor, bienvenido al Desafio Entregable 4</h1>
+    <p>
+        Estos son todos los productos disponibles: <br>
+        {{#each resProducts}}
+        <div>
+            <p>
+                ID:  {{this.id}}<br>
+                Titulo: {{this.title}} <br>
+                Precio: {{this.price}} <br>
+                Descripcion: {{this.description}} <br>
+                Stock: {{this.stock}} <br>
+                Codigo: {{this.code}} <br>
+                Categoria: {{this.category}} <br>
+            </p>
+        </div>
+        {{/each}}
+    </p>
 </div>
-<script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
