@@ -2,6 +2,9 @@ const express = require('express')
 const productRouter = require('./routes/products.routes')
 const cartsRouter = require('./routes/carts.routes')
 const viewsRouter = require('./routes/views.routes')
+const ProductsManager = require('./Managers/productsManager')
+const products = new ProductsManager()
+
 const open = require("open")
 const morgan = require('morgan')
 const { engine } = require('express-handlebars')
@@ -29,6 +32,10 @@ const httpServer = app.listen(PORT, () => {
 
 const io = new Server(httpServer)
 
-io.on('connection', socket => {
+io.on('connection', async (socket) => {
   console.log('New client connected')
+  const resProducts = await products.getAllProducts()
+  socket.emit('productList', resProducts)
 })
+
+module.exports = io

@@ -15,8 +15,8 @@ router.get(`/${path}`, async (req, res) => {
 router.get(`/${path}/:id`, async (req, res) => {
   const { id } = req.params
   try {
-    const resProduct = await products.getProductById(parseInt(id))
-    res.status(200).json(resProduct)
+    const resProducts = await products.getProductById(parseInt(id))
+    res.status(200).json(resProducts)
   } catch (error) {
     console.log(error)
   }
@@ -43,8 +43,8 @@ router.put(`/${path}/:id`, async (req, res) => {
 router.delete(`/${path}/:id`, async (req, res) => {
   const { id } = req.params
   try {
-    const resProduct = await products.deleteProduct(parseInt(id))
-    res.status(200).json(resProduct)
+    const resProducts = await products.deleteProduct(parseInt(id))
+    res.status(200).json(resProducts)
   } catch (error) {
     console.log(error)
   }
