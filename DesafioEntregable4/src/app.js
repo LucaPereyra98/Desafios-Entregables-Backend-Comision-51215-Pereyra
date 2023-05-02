@@ -37,5 +37,3 @@ io.on('connection', async (socket) => {
   const resProducts = await products.getAllProducts()
   socket.emit('productList', resProducts)
 })
-
-module.exports = io
